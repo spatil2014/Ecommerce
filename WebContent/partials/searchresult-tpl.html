@@ -1,0 +1,43 @@
+<!-- search result grid -->
+<!-- <div class="countResults">About {{filteredResults.length}} Search Results</div> -->
+    <div class="col-md-11 search-box">
+		<form class="form-inline" role="form">
+			<div class="form-group has-feedback has-feedback-left">
+				 <input type="text" ng-model='searchTerm'
+					class="form-control" placeholder="Search"  ng-change="getFilteredData()"> 
+					<i class="glyphicon glyphicon-search form-control-feedback"></i>
+			</div>
+		</form>
+		<!-- <input type="search" class="glyphicon glyphicon-search" ng-model='searchTerm' placeholder="Search" name="search" ng-change="getFilteredData()"> -->
+    </div>
+<section class="search-result">
+    <hr class=""/>
+    <div class="search-content" data-ng-repeat="item in filteredResults=(searchResults |filter:filterByCategory) | offset: currentPage*itemsPerPage" ng-click="selectedItem(item)">
+        <!--<div data-ng-repeat="item in searchResults |filter:{included:true} | offset: currentPage*itemsPerPage | limitTo: itemsPerPage">-->
+        <span><a href="#/page/dataPCIn">{{item.title}}</a></span>
+        <p class="result-desc"><img alt="not found" src="{{item.img}}"></p>
+        <div class="data-link">
+            <span><a href="">Link |</a> </span>
+            <span><a href="">Attachment |</a></span>
+            <span><a href="">photos</a> </span>
+        </div>
+    </div>
+</section>
+<hr class="search-result"/>
+<!-- Pagination -->
+<div class="srhPagination" ng-show="noOfPages> 1" >
+    <ul>
+        <li style="display: inline ;"ng-class="prevPageDisabled()">
+            <a href ng-click="prevPage()">« Prev</a>
+        </li>
+        <li style="display: inline" ng-repeat="n in range()"
+            ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+            <a href="">{{n+1}}</a>
+        </li>
+        <li style="display: inline" ng-class="nextPageDisabled()">
+            <a href ng-click="nextPage()">Next »</a>
+        </li>
+    </ul>
+
+</div>
+<!--<div ng-include="partials/searchresult-tpl.html"></div>-->

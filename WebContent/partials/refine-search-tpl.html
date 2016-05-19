@@ -1,0 +1,23 @@
+<div class="mainFacet col-md-4" ng-show='searchTerm && searchResults.length'>
+    <div class="oneFacet ">
+        <div class="facetContainer">
+            <div class="head line fk-uppercase">
+                <div class="facet-title">
+                    <h4 class="unit line fk-font-15">
+                        Search with Region
+                    </h4>
+                </div>
+            </div>
+
+            <ul id="screen_size" class="facets">
+                <li data-ng-repeat="item in searchResults | unique: 'region'">
+                   <!--<input type="checkbox" autocomplete="off"  ng-model='optionalFilters[$index]'  ng-change="getFilteredData(optionalFilters[$index],item.region)">-->
+                    <input type="checkbox" autocomplete="off"  ng-model='optionalFilters[item.region]'>
+                    <!--<input type="checkbox" autocomplete="off"  ng-model='f.included'>-->
+                    <span>{{item.region}}</span>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

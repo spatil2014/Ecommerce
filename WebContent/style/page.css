@@ -1,0 +1,8 @@
+.page-style {
+    background-color: #fff;
+}
+.selected-img {
+	width: 29%;
+    float: left;
+    border: 1px solid ghostwhite;
+}

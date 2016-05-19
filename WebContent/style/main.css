@@ -1,0 +1,150 @@
+.header {
+	background-color:rgba(0, 150, 136, 0.67);
+}
+.container-fluid {
+	background:#f3f3f3;
+	padding: 0;
+}
+.search-box {
+	margin-left: 20%;
+}
+.search-category {
+	margin-left: 20%;
+}
+.srh-main {
+    width: 70%;
+    margin: 0 auto;
+}
+.search-div {
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9
+}
+
+input[name='search'] {
+    padding: 0px;
+    margin: 0px;
+    height: 38px;
+    width: 100%;
+    z-index: 6;
+    left: 0px;
+    outline: none;
+}
+
+.srh-category {
+    width: 600px;
+    position: relative;
+    top: 1rem;
+}
+.srh-category-elements {
+    list-style-type: none;
+}
+
+.srh-category-elements li {
+    display: inline-block;
+    width: 19%;
+}
+.search-result {
+    /* max-width: 600px;
+    margin-left: 15% ;*/
+    border-left: 1px solid #CAC5C5;;
+    margin-top: 0rem;
+    cursor: pointer;
+}
+
+.search-content {
+    padding-left: 10px;
+    display:inline-block;
+    width:31%;
+    border: 1px solid rgba(202, 197, 197, 0.21);
+    margin:1%;
+    background: #fff;
+}
+.main-view {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 10rem;
+}
+.navbar-header {
+	float: none;
+	background-color:rgba(0, 150, 136, 0.67);
+}
+#navbarCollapse>ul {
+	width:100%;
+}
+#navbarCollapse > ul > li{
+	width:11%;
+}
+.countResults {
+    line-height: 43px;
+}
+.srhPagination {
+    width: 600px;
+    margin-left: 26%;
+}
+.result-desc {
+    padding:10px;
+    border-bottom: 2px solid #EAE7E7;
+    margin-left: -10px;
+}
+.data-link {
+    position: relative;
+    top: -1rem;
+}
+.mainFacet {
+    /* width: 15%; */
+    top: 2rem;
+    margin-left: -33%;
+    /* position: absolute; */
+    padding-left: 9%;
+    border-top: 1px solid #CAC5C5;
+    border-bottom: 1px solid #CAC5C5;
+}
+.facets {
+    list-style-type: none;
+}
+
+/* login page */
+.form_bg {
+    background-color:#fff;
+    color:#666;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #fff;
+    margin-top: 3%;
+    margin-left: -5%;
+    width: 32rem;
+    height: 280px;
+}
+
+.align-center {
+    
+    text-align:center;
+}
+
+/* media query */
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 768px) {
+        .search-box {
+    		width: 70%;
+    		margin: 8px;
+		}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+    
+     @media only screen and (min-width: 768px) {
+     	.search-box {
+     		margin-left: 8%;
+     	}
+     	.form-inline .form-control {
+    		width: 100%;
+		}
+		.form-inline .form-group {
+			width: 87%;
+		}
+     }
