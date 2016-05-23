@@ -34,7 +34,6 @@
         $scope.currentPage = 0;
         $scope.searchType = 'all';
         $scope.selected= '';
-        var selValue;
 
         $scope.selectedItem = function(itm) {
         	selectedService.selectedVal = itm;

@@ -60,6 +60,9 @@ input[name='search'] {
     margin:1%;
     background: #fff;
 }
+.search-content:hover {
+	border: 1px solid yellowgreen;
+}
 .main-view {
     width: 70%;
     margin: 0 auto;
@@ -114,12 +117,35 @@ input[name='search'] {
     border:1px solid #fff;
     margin-top: 3%;
     margin-left: -5%;
-    width: 32rem;
-    height: 280px;
+}
+.form_bg form {
+	width:28%;
 }
 
+.social-icons {
+	margin-top: 2%;
+}
+.social-icons .btn-facebook{
+	background: #fff;
+    border: 1px solid #3b5998;
+    width: 20%;
+}
+
+.social-icons .btn-facebook:hover {
+	background-color: #3b5998;
+    color: #fff;
+}
+
+.social-icons .btn-google{
+	background: #fff;
+    border: 1px solid #dd4b39;
+    width: 20%;
+}
+.social-icons .btn-google:hover {
+	background-color: #dd4b39;
+    color: #fff;
+}
 .align-center {
-    
     text-align:center;
 }
 

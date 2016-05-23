@@ -1,20 +1,35 @@
 <div class="container">
-    <div class="row">
-        <div class="form_bg">
-            <form>
-                 <h2 class="text-center">Login Page</h2>
-                <br/>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="userid" placeholder="User id">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="pwd" placeholder="Password">
-                
-                    </div>
-                   <div class="align-right">
-                <button type="submit" class="btn btn-default" id="login">Login</button>
-                    </div>
-            </form>
-        </div>
-    </div>
+	<div class="row">
+		<div class="form_bg">
+			<form name="loginForm">
+				<h2 class="text-center">Login Page</h2>
+				<br />
+				<div class="form-group">
+					<input type="email" name="email" class="form-control" id="userid"
+						placeholder="Email" ng-model="email" required> <span
+						class="valid" ng-show="loginForm.email.$valid">&#10004;</span><br>
+				</div>
+				<div class="form-group">
+					<input name="password" type="password" class="form-control"
+						id="pwd" placeholder="Password" ng-model="password"
+						ng-minlength="8" ng-maxlength="16" required> <span
+						class="valid" ng-show="loginForm.password.$valid">&#10004;</span><br>
+				</div>
+				<div class="align-right">
+					<button type="submit" class="btn btn-default" id="login">Login</button>
+				</div>
+			</form>
+			<div class="social-icons">
+<!-- 				<button class="btn btn-social-icon btn-twitter">
+					<span class="fa fa-twitter">Twitter</span>
+				</button> -->
+				<button class="btn btn-social-icon btn-facebook">
+					<span class="fa fa-facebook">Facebook</span>
+				</button>
+				<button class="btn btn-social-icon btn-google">
+					<span class="fa fa-google">Google</span>
+				</button>
+			</div>
+		</div>
+	</div>
 </div>

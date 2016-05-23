@@ -6,3 +6,6 @@
     float: left;
     border: 1px solid ghostwhite;
 }
+.form_bg input.ng-invalid.ng-dirty {
+	border-color:red;
+}
