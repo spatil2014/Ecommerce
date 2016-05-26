@@ -99,6 +99,61 @@
             }
             return true;
         };
+
+        $scope.calculateRoute = function(location) {
+        	console.log(location);
+        	var from;
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode({
+                  "location": new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+                },
+                function(results, status) {
+                  if (status == google.maps.GeocoderStatus.OK)
+                	  from = results[0].formatted_address;
+//                    $("#" + addressId).val(results[0].formatted_address);
+                  else
+                    $("#error").append("Unable to retrieve your address<br />");
+                });
+              },
+              function(positionError){
+                $("#error").append("Error: " + positionError.message + "<br />");
+              },
+              {
+                enableHighAccuracy: true,
+                timeout: 10 * 1000 // 10 seconds
+              });
+        	var myOptions = {
+        	          zoom: 10,
+        	          center: new google.maps.LatLng(40.84, 14.25),
+        	          mapTypeId: google.maps.MapTypeId.ROADMAP
+        	        };
+        	        // Draw the map
+        	        var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
+        	        var directionsService = new google.maps.DirectionsService();
+        	        var directionsRequest = {
+        	          origin: "560001",
+        	          destination: location,
+        	          travelMode: google.maps.DirectionsTravelMode.DRIVING,
+        	          unitSystem: google.maps.UnitSystem.METRIC
+        	        };
+        	        directionsService.route(
+        	          directionsRequest,
+        	          function(response, status)
+        	          {
+        	            if (status == google.maps.DirectionsStatus.OK)
+        	            {
+        	              new google.maps.DirectionsRenderer({
+        	                map: mapObject,
+        	                directions: response
+        	              });
+        	            }
+        	            else
+        	              $("#error").append("Unable to retrieve your route<br />");
+        	          }
+        	        );
+        	        $("#shopModal").modal('show')
+        }
     });
 
     app.controller('detailCtrl', function($scope, selectedService) {

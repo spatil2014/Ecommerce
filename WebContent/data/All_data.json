@@ -9,7 +9,8 @@
     "category": "pc",
     "region" : "India",
     "img" : "images/img_1.jpg",
-    "price": "1200"
+    "price": "1200",
+    "location": "Indira nagar Bangalore"
   },
   {
     "id" : 2,
@@ -21,7 +22,8 @@
     "photos":"www.google.com",
     "category":"bank",
     "region" : "US",
-    "img" : "images/img_2.jpg"
+    "img" : "images/img_2.jpg",
+    "location": "HSR layout Bangalore"
   },
   {
     "id" : 3,
@@ -33,7 +35,8 @@
     "photos":"www.google.com",
     "category":"auto",
     "region" : "US",
-    "img" : "images/img_3.jpg"
+    "img" : "images/img_3.jpg",
+    "location": "Rajaji nagar Bangalore"
   },
   {
     "id" : 4,
@@ -45,7 +48,8 @@
     "photos":"www.google.com",
     "category":"property",
     "region" : "Europe",
-    "img" : "images/img_4.jpg"
+    "img" : "images/img_4.jpg",
+    "location": "Sanjeev nagar Bangalore"
   },
   {
     "id" : 5,
@@ -57,7 +61,8 @@
     "photos":"www.google.com",
     "category":"insurance",
     "region" : "India",
-    "img" : "images/img_5.jpg"
+    "img" : "images/img_5.jpg",
+    "location": "whitefield Bangalore"
   },
   {
     "id" : 1,
@@ -69,7 +74,8 @@
     "photos":"www.google.com",
     "category": "pc",
     "region" : "China",
-    "img" : "images/img_6.jpg"
+    "img" : "images/img_6.jpg",
+    "location": "JP nagar Bangalore"
 
   },
   {
@@ -82,7 +88,8 @@
     "photos":"www.google.com",
     "category": "bank",
     "region" : "China",
-    "img" : "images/img_7.jpg"
+    "img" : "images/img_7.jpg",
+    "location": "Indira nagar Bangalore"
   },
   {
     "id" : 3,
@@ -94,7 +101,8 @@
     "photos":"www.google.com",
     "category": "auto",
     "region" : "US",
-    "img" : "images/img_8.jpg"
+    "img" : "images/img_8.jpg",
+    "location": "JP nagar Bangalore"
   },
   {
     "id" : 4,
@@ -106,7 +114,8 @@
     "photos":"www.google.com",
     "category": "property",
     "region" : "Australia",
-    "img" : "images/img_9.jpg"
+    "img" : "images/img_9.jpg",
+    "location": "JC nagar Bangalore"
   },
   {
     "id" : 5,
@@ -118,7 +127,8 @@
     "photos":"www.google.com",
     "category": "insurance",
     "region" : "Australia",
-    "img" : "images/img_10.jpg"
+    "img" : "images/img_10.jpg",
+    "location": "Majestic Bangalore"
   },
   {
     "id" : 2,
@@ -130,7 +140,8 @@
     "photos":"www.google.com",
     "category": "bank",
     "region" : "Europe",
-    "img" : "images/img_2.jpg"
+    "img" : "images/img_2.jpg",
+    "location": "Katreguppe Bangalore"
   },
   {
     "id" : 2,

@@ -1,10 +1,45 @@
 <div class="page-style col-md-11">
     <div class="selected-img"><img alt="not found" src="{{selected.img}}">
-    	<p>&#8377{{selected.price}}</p>
+    	<p>
+    		<button>BUY Online</button>
+    		<button ng-click="calculateRoute(selected.location)">VISIT SHOP</button>
+    	</p>
     </div>
     <div>
     	<h2>{{selected.title}}</h2>
     	<p>{{selected.description}}</p>
+    	<p><label for='price'>Price: </label>&#8377{{selected.price}}</p>
     </div>
     <span>{{selected.region}}</span>
+
+	<div id="shopModal" class="modal fade">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	                <h4 class="modal-title">Selected Item is Available at Below Shops</h4>
+	            </div>
+	            <div class="modal-body">
+					<p>Visit Nearest Shop</p>
+	                <form>
+	                	<div class="selected-img"><img alt="not found" src="{{selected.img}}"></div>
+	                	<div>
+    						<h2>{{selected.title}}</h2>
+    						<p>{{selected.description}}</p>
+    						<p><label for='price'>Price: </label>&#8377{{selected.price}}</p>
+    					</div>
+	                	<div id="map"></div>
+						<div id="error"></div>
+<!-- 	                    <div class="form-group">
+	                    	<a href="#login"><Button class="form-control">Login</Button></a>
+	                    </div>
+	                    <div class="form-group">
+	                        <a href="#register"><Button class="form-control">Register</Button></a>
+	                    </div>
+	                    <a data-dismiss="modal" href="#"><button type="submit" class="btn btn-primary">skip</button></a> -->
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 </div>
